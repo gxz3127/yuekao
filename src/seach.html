@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=   , initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/seach.css">
+    <link rel="stylesheet" href="./icon/iconfont.css">
+    <title>Document</title>
+</head>
+<script>
+       document.documentElement.style.fontSize=window.innerWidth/377*100+"px";
+</script>
+<script src="./js/libs/require.js"></script>
+<script>
+       require(["./js/main.js"],function(){
+           require(["seach"]);
+       })
+</script>
+<body> 
+      <div class="box">
+             <header>
+                     <i class="iconfont">&#xe653;</i>
+                     <b id="list">
+                        <em>商品</em>
+                        <em>详情</em>
+                     </b>
+                     <u>
+                        <span class="iconfont">&#xe6cd;</span>
+                        <span class="iconfont">&#xe649;</span>
+                     </u>
+             </header>
+             <section>
+                    <div class="nei one"> 
+                        <img src="./img/img1.png" alt="">
+                        <b>换自然</b>
+                        <i>￥ 199</i>
+                    </div>
+                    <div class="nei"> 
+                          <ul>
+                              <li>适合季节  四季通用</li>
+                              <li>床单式</li>
+                              <li>全棉</li>
+                          </ul>
+                    </div>  
+             </section>
+             <script id="list-text" type="text/x-handlebars-template">
+                    <img src="{{url}}" alt="">
+                    <b>{{title}}</b>
+                    <i>{{price}}</i>
+             </script> 
+            <footer>
+                    <b class="iconfont">&#xe6b1;</b> 
+                    <b class="iconfont">&#xe649;</b>  
+                    <b class="iconfont">&#xe6d6;</b>  
+                    <u>上架提醒</u>
+                    <u>即将上架</u>
+            </footer>  
+      </div>
+</body>
+</html>

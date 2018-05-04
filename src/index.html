@@ -12,15 +12,74 @@
        document.documentElement.style.fontSize=window.innerWidth/375*100+"px";
 </script>
 <body>
+    <script src="./js/libs/require.js"></script>
+    <script src="js/libs/jquery-3.1.1.min.js"></script>
+    <script>
+            require(["./js/main.js"],function(){
+                 require(["index"])
+            })
+    </script>
       <div class="wrap">
             <header>
-                   <i class="iconfont"></i>
+                   <i class="iconfont">&#xe653;</i>
                    <b>居家</b>
-                   <em class="iconfont"></em>
-            </header>
+                   <em class="iconfont">&#xe729;</em>
+            </header> 
             <section>
-                     身体
+                    <div class="nav">
+                            <ul id="uls">
+                                <li class="pink">床品件套</li>
+                                <li>被枕</li>
+                                <li>家具</li>
+                                <li>收纳</li>
+                                <li>布艺软装</li>
+                                <li>家居</li> 
+                            </ul>  
+                    </div>
+                    <div class="big-box">
+                            <div class="nei"> 
+                                    <div class="box one">
+                                            <!-- <b>
+                                                <img src="./img/img1.png" alt="">
+                                                <em>Paisley欧式天丝四件套</em>
+                                                <i>￥ 599</i>
+                                            </b> 
+                                            <b>
+                                                <img src="./img/img1.png" alt="">
+                                                <em>Paisley欧式天丝四件套</em>
+                                                <i>￥ 599</i>
+                                            </b>
+                                            -->
+                                    </div>
+                                    <script id="list-text" type="text/x-handlebars-template">
+                                        {{#each this}} 
+                                                <b> 
+                                                    <a href="seach.html?id={{id}}"><img src="{{url}}" alt=""></a>
+                                                    <em>{{title}}</em>
+                                                    <i>{{price}}</i>
+                                                </b>
+                                           
+                                        {{/each}} 
+                                    </script>
+                                    <div class="box"> 
+                                        被枕
+                                    </div>
+                                    <div class="box">
+                                         家居
+                                    </div> 
+                                    <div class="box">
+                                         收纳
+                                    </div>
+                                    <div class="box">
+                                        布艺软装
+                                    </div>
+                                    <div class="box">
+                                        家居
+                                    </div>
+                            </div>
+                    </div>
+                   
             </section>
-      </div>
+      </div> 
 </body>
 </html>

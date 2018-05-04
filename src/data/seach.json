@@ -1,0 +1,22 @@
+{
+    "seachlist":[
+        {
+            "id":1,
+            "img":"../img/img1.png",
+            "title":"透气呼吸沙四件套",
+            "price":"￥ 459"
+        },
+        {
+            "id":2,
+            "img":"../img/img1.png",
+            "title":"透气呼吸沙四件套",
+            "price":"￥ 459"
+        },
+        {
+            "id":3,
+            "img":"../img/img1.png",
+            "title":"透气呼吸沙四件套",
+            "price":"￥ 459"
+        }
+    ]
+}
