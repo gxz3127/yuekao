@@ -8,6 +8,11 @@ gulp.task("default",function(){
     gulp.src("./src")
     .pipe(server({
         port:"6754",
-        host:""
+        host:"169.254.242.144",
+        open:true,
+        livereload:true,
+        middleware:function(req,rea,next){
+            next();
+        }
     }))
 })
